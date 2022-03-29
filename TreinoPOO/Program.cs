@@ -4,45 +4,21 @@ using System.Globalization;
 namespace TreinoPOO
 {
     class Program
-    {
+    {        
         static void Main(string[] args)
         {
-            Pessoa p1;
-            p1 = new Pessoa();
-
-            double media, Aumento;
-
-            Console.WriteLine("Dados do funionario:");
-            Console.Write("Nome:  ");
-            p1.nome = Console.ReadLine();
-            Console.Write("Salario:  ");
-            p1.salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-            Console.Clear();
-
-            Console.WriteLine("Funcionario: " + p1.nome + ", Salario $ " + p1.salario.ToString("F3", CultureInfo.InvariantCulture));
-            Console.WriteLine();
-
-            Console.Write("Digite a porcentagem para aumentar o salario: ");
-            p1.AumentoSalario(Aumento = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
-
-            Console.WriteLine("Funcionario: " + p1.nome + ", Salario $ " + p1.salario);
-            Console.WriteLine();
-        }
-    }
-}
-
-/*Produto p = new Produto();
+            Produto p = new Produto();
 
             Console.WriteLine("Entre com os dados do Produto:");
             Console.Write("Nome: ");
             p.Nome = Console.ReadLine();
 
             Console.Write("Preço: ");
-            p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+             p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.Write("Quantidade: ");
             p.Quantidade = int.Parse(Console.ReadLine());
+
 
             Console.WriteLine("Dados do produto: " + p);
             Console.ReadLine();
@@ -82,7 +58,44 @@ namespace TreinoPOO
                         break;
                 }
                 Console.Clear();
-            } while (RespostaMenu != 3);*/
+            } while (RespostaMenu != 3);
+        }
+    }
+}
+
+
+
+/*            Moedas mod = new Moedas();
+
+            Console.WriteLine("Digite a cotação do Dolar atual");
+            double Cotacao = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine();
+
+            Console.Write("Digite quantos Dolares deseja comprar: ");
+            double CompraDolar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            mod.ConversaoCompraDolar(Cotacao, CompraDolar);*/
+
+/*Pessoa p1;
+            p1 = new Pessoa();
+
+            double media, Aumento;
+
+            Console.WriteLine("Dados do funionario:");
+            Console.Write("Nome:  ");
+            p1.nome = Console.ReadLine();
+            Console.Write("Salario:  ");
+            p1.salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.Clear();
+
+            Console.WriteLine("Funcionario: " + p1.nome + ", Salario $ " + p1.salario.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine();
+
+            Console.Write("Digite a porcentagem para aumentar o salario: ");
+            p1.AumentoSalario(Aumento = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
+
+            Console.WriteLine("Funcionario: " + p1.nome + ", Salario $ " + p1.salario);
+            Console.WriteLine();*/
 
 /*
 Pessoa p1, p2;
